@@ -4,19 +4,22 @@
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" type="text/css" href="resources\style.css">
 </head>
-<body onload="makePlay()">
+<body>
     <header>
-        <h1>Welcome to Tic-Tac-Toe</h1>
+        <h1>Tic-Tac-Toe</h1>
+        <button onclick="makeBoard()">Start Game</button>
+        <button onclick="clearGame()">Clear</button>
     </header>
 
     <div id="mainContainer">
+        <div id="turnContainer">
+        </div>
         <div id="gridContainer">
+        </div>
+        <div id="winnerMsg">
         </div>
     </div>
 
     <script src="resources\script.js"></script>
 </body>
-
-<footer>
-</footer>
 </html>
